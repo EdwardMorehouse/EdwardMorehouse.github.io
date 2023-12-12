@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+		<title>Installing Idris</title>
+	</head>
+
+	<body>
+		
+		<h1>
+			Installing Idris
+		</h1>
+
+		<p>
+			In this course we will be using the programming language
+			<a href="https://www.idris-lang.org/">Idris</a>, language version 2.
+			Unless the package manager for your system lets you install a binary
+			(version 0.6 or higher) of <code>idris2</code>, you will need to build it from
+			<a href="https://github.com/idris-lang/Idris2">source</a>.
+			In addition to a standard build environment
+			(<code>git</code>, <code>bash</code>, <code>make</code>, etc.)
+			you will need two things:
+		</p>
+
+		<ul>
+			<li>
+				<a href="https://gmplib.org/">GNU Multiple Precision Arithmetic Library (libGMP)</a>
+			</li>
+			<li>
+				<a href="https://www.scheme.com/">Chez Scheme</a>
+			</li>
+		</ul>
+
+		<p>
+			Building libGMP itself requires the GNU C compiler,
+			or something that can emulate it like LLVM.
+			Ideally, your package manager could provide you with a precompiled version.
+		</p>
+
+		<p>
+			Below are some notes collected from the course staff and students
+			to help you get <code>idris2</code> installed on your system.
+		</p>
+		
+		
+		
+		<h2>
+			Linux
+		</h2>
+		
+		<p>
+			The package manager for most Linux systems should be able to install binaries
+			for both libGMP and Chez Scheme for you.
+			One potential difficulty is that
+			<a href="https://github.com/cisco/ChezScheme">mainline Chez Scheme</a>
+			does not yet support ARM64
+			(see <a href="https://github.com/cisco/ChezScheme/issues/545">this issue</a>).
+			If this is your architecture then you should use the
+			<a href="https://github.com/racket/ChezScheme">Racket fork of Chez Scheme</a> instead.
+			Note that by default the mainline executable is called <code>chez</code>
+			while the Racket version is called <code>scheme</code>.
+		</p>
+
+		<p>
+			Once you have installed both libGMP and Chez Scheme
+			you can install Idris either using your package manager or
+			by following the build instructions in the INSTALL file of the GitHub repo for
+			<a href="https://github.com/idris-lang/Idris2">Idris2</a>.
+		</p>
+		
+		
+		<h2>
+			MacOS
+		</h2>
+		
+		<p>
+			The easiest way to get the dependencies for Idris is to use the
+			<a href="https://brew.sh/">HomeBrew package manager</a>.
+			On Intel hardware you can simply run
+			<code>brew install gmp</code> and
+			<code>brew install chezscheme</code>, followed by
+			<code>brew install idris2</code>.
+		</p>
+		
+		<p>
+			For MacOS on ARM64, you can use HomeBrew to install libGMP,
+			but because mainline Chez Scheme does not yet build on ARM64
+			you will need to use the Racket fork instead
+			(see above and <a href="https://github.com/cisco/ChezScheme/issues/544">this issue</a>).
+			Once you have working libGMP and Chez Scheme you can build <code>idris2</code> following
+			<a href="https://github.com/idris-lang/Idris2/issues/2233#issuecomment-1002915184">these instructions</a>.
+		</p>
+		
+		
+		<h2>
+			Windows
+		</h2>
+		
+		<p>
+			There are several ways to get a development environment installed on Windows.
+			The easiest is probably to use the
+			<a href="https://docs.microsoft.com/en-us/windows/wsl/">Windows Subsystem for Linux</a> (WSL).
+			In this case the installation procedure should be the same as for Linux above.
+		</p>
+
+		<p>
+			If instead of WSL you want to build natively for Windows
+			you can use a package manager such as <a href="https://www.cygwin.com/">Cygwin</a>
+			to install the necessary dependencies.
+			In this case the course staff will not be able to help you very much
+			because we have limited experience developing on Windows.
+			We encourage Windows users in the course to work together
+			on finding an installation method that works for them. 
+		</p>
+		
+		
+		
+		<h1>
+			Editor Integration
+		</h1>
+
+		<p>
+			Idris can help you write your programs interactively through the use of editor integration.
+			This lets you ask Idris to tell you the type or value of an expression,
+			search documentation, decompose a problem into subproblems, etc.
+			In order to use this feature you will need to use a program editor
+			with a plug-in that supports interactive bidirectional communication with Idris.
+			Currently these include:
+		</p>
+
+		<dl>
+			<dt>
+				Visual Studio Code
+			</dt>
+			<dd>
+				<a href="https://github.com/meraymond2/idris-vscode">idris-vscode</a>
+			</dd>
+			<dt>
+				Emacs
+			</dt>
+			<dd>
+				<a href="https://github.com/idris-hackers/idris-mode">idris-mode</a>
+			</dd>
+			<dt>
+				Vim
+			</dt>
+			<dd>
+				<a href="https://github.com/edwinb/idris2-vim">idris-vim</a>
+			</dd>
+		</dl>
+
+
+
+	</body>
+	
+</html>
+

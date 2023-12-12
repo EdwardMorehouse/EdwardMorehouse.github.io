@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<meta charset="UTF-8">
+	
+		<title>Functional Programming | ITI0212 | Spring 2023</title>
+		<link rel="stylesheet" href="/assets/css/style.css?v=">
+	</head>
+	
+	
+	<body>
+		<div class="wrapper">
+			
+			<header>
+				<h1><a href="/">TallCat</a></h1>
+				<img src="/images/tallcats.jpg" alt="Logo" />
+				<p>Webpage of the Compositional Systems and Methods group at TalTech</p>
+			</header>
+			
+			<section>
+				<h1>Functional Programming</h1>
+				
+				
+				<h2>Course Organization</h2>
+				
+				<dl>
+					<dt>course code</dt>
+						<dd>ITI0212</dd>
+					<dt>term</dt>
+						<dd>Spring 2023</dd>
+					<dt>lectures</dt>
+						<dd>
+							Mondays  10:00 - 11:30
+							<br/>
+							in ICT-315 and on
+							<a href = "https://us02web.zoom.us/j/81683826048?pwd=RGVuWEM5Sm5EN0lpWjFUQUhGSHJBdz09">Zoom</a>
+						</dd>
+					<dt>labs</dt>
+						<dd>
+							Fridays 08:30 - 10:00
+							<br/>
+							in ICO-319
+						</dd>
+					<dt>instructors</dt>
+						<dd>
+							<a href = "https://www.ioc.ee/~ed/">Ed Morehouse</a>,
+							<a href = "https://sites.google.com/view/dianakessler/home">Diana Kessler</a>
+						</dd>
+					<dt>teaching assistants</dt>
+						<dd>
+							Clémence Chanavat,
+							Michele De Pascalis,
+							Andrea Laretto
+						</dd>
+					<dt>syllabus</dt>
+						<dd>
+							<a href="handout/syllabus.pdf">here</a>
+						</dd>
+					<dt>discord</dt>
+						<dd>
+							<a href="https://discord.gg/cpgzp9xv3R">Join</a>
+						</dd>
+				</dl>
+				
+				
+				<h2>Resources</h2>
+				
+				<ul>
+					<li>
+						Some notes on <a href = "reference/install_idris.html">installing Idris</a>
+					</li>
+					<li>
+						The <a href = "https://www.idris-lang.org/">Idris Website</a>
+					</li>
+					<li>
+						The <a href = "https://docs.idris-lang.org/_/downloads/en/latest/pdf/">Idris Tutorial</a>
+						(written for Idris 1, but mostly still applies to Idris 2)
+					</li>
+					<li>
+						The <a href = "https://www.manning.com/books/type-driven-development-with-idris">Idris Book</a>
+						(also available from the TalTech Library)
+					</li>
+					<li>
+						Idris 2 <a href = "https://idris2.readthedocs.io/en/latest/">online documentation</a>
+					</li>
+					<li>
+						Idris 2 <a href = "https://github.com/idris-lang/Idris2/tree/main/libs">standard library</a>
+					</li>
+				</ul>
+				
+				
+				<h2>Announcements</h2>
+				
+				<ul>
+					<li>
+						Due to public holiday there will be no lab meeting on 2023-02-24.
+					</li>
+					<li>
+						Due to public holiday there will be no lab meeting on 2023-04-07.
+					</li>
+					<li>
+						Due to public holiday there will be no lecture meeting on 2023-05-01.
+					</li>
+				</ul>
+				
+				<ul>
+				</ul>
+				
+				
+				
+				<h2>Assignments</h2>
+				
+				<ul>
+					<li><a href="homework/homework_1.pdf">homework 1</a> is due 2023-03-06.</li>
+					<li><a href="homework/homework_2.pdf">homework 2</a> is due 2023-03-27.</li>
+					<li><a href="homework/homework_3.pdf">homework 3</a> is due 2023-04-17.</li>
+					<li><a href="homework/homework_4.pdf">homework 4</a> is due 2023-05-08.</li>
+					<li><a href="homework/homework_5.pdf">homework 5</a> is due 2023-05-29.</li>
+				</ul>
+				
+				
+				
+				<h2>Course Project</h2>
+				
+				<ul>
+					<li>
+						The <a href="handout/project.pdf">course project specification</a>
+						is now available.
+						The deadline is the end of the term, 2023-05-21.
+					</li>
+				</ul>
+				
+				
+				
+				<h2>Final Exam</h2>
+				<ul>
+					<li>
+						The <a href="handout/exam.pdf">final exam specification</a>
+						is now available.
+						Please read it and register for an exam time by 2023-05-15.
+					</li>
+				</ul>
+				
+				
+				
+				<h2>Outline</h2>
+				
+				<table>
+					
+					<tr>
+						<th>week</th>
+						<th>date</th>
+						<th>topic</th>
+						<th>lecture videos</th>
+						<th>lecture notes</th>
+						<th>lab exerceses</th>
+					</tr>
+					
+					<tr>
+						<td>01</td>
+						<td>2023-01-30</td>
+						<td>course introduction</td>
+						<td><a href="https://seafile.cs.ttu.ee/d/aa0067d80572491da300/files/?p=%2FGMT20230130-081210_Recording_640x360.mp4">lecture video</a></td>
+						<td><a href="lecture/Lecture1.idr">script file</a></td>
+						<td><a href="lab/lab_01.pdf">lab sheet</a></td>
+					</tr>
+					
+					<tr>
+						<td>02</td>
+						<td>2023-02-06</td>
+						<td>inductive types and recursive functions</td>
+						<td><a href="videos/lecture2.mp4">lecture video</a></td>
+						<td><a href="lecture/Lecture2.idr">script file</a></td>
+						<td><a href="lab/lab_02.pdf">lab sheet</a></td>
+						<td></td>
+					</tr>
+					
+					<tr>
+						<td>03</td>
+						<td>2023-02-13</td>
+						<td>parameterized types and generic functions</td>
+						<td><a href="videos/lecture3.mp4">lecture video</a></td>
+						<td><a href="lecture/Lecture3.idr">script file</a></td>
+						<td><a href="lab/lab_03.pdf">lab sheet</a></td>
+					</tr>
+					
+					<tr>
+						<td>04</td>
+						<td>2023-02-20</td>
+						<td>function literals and higher-order functions</td>
+						<td><a href="videos/lecture4.mp4">lecture video</a></td>
+						<td><a href="lecture/Lecture4.idr">script file</a></td>
+						<td><a href="lab/lab_04.pdf">lab sheet</a></td>
+						<td></td>
+					</tr>
+					
+					<tr>
+						<td>05</td>
+						<td>2023-02-27</td>
+						<td>programming interfaces</td>
+						<td><a href="videos/lecture5.mp4">lecture video</a></td>
+						<td><a href="lecture/Lecture5.idr">script file</a></td>
+						<td><a href="lab/lab_05.pdf">lab sheet</a></td>
+						<td></td>
+					</tr>
+					
+					<tr>
+						<td>06</td>
+						<td>2023-03-06</td>
+						<td>totality for data and codata</td>
+						<td><a href="videos/lecture6.mp4">lecture video</a></td>
+						<td><a href="lecture/Lecture6.idr">script file</a></td>
+						<td><a href="lab/lab_06.pdf">lab sheet</a></td>
+					</tr>
+					
+					<tr>
+						<td>07</td>
+						<td>2023-03-13</td>
+						<td>monadic I/O</td>
+						<td><a href="videos/lecture7.mp4">lecture video</a></td>
+						<td><a href="lecture/Lecture7.idr">script file</a></td>
+						<td><a href="lab/lab_07.pdf">lab sheet</a></td>
+					</tr>
+					
+					<tr>
+						<td>08</td>
+						<td>2023-03-20</td>
+						<td>algebraic interfaces</td>
+						<td><a href="videos/lecture8.mp4">lecture video</a></td>
+						<td><a href="lecture/Lecture8.idr">script file</a></td>
+						<td><a href="lab/lab_08.pdf">lab sheet</a></td>
+					</tr>
+					
+					<tr>
+						<td>09</td>
+						<td>2023-03-27</td>
+						<td>indexed types and dependent functions</td>
+						<td><a href="videos/lecture9.mp4">lecture video</a></td>
+						<td><a href="lecture/Lecture9.idr">script file</a></td>
+						<td><a href="lab/lab_09.pdf">lab sheet</a></td>
+					</tr>
+					
+					<tr>
+						<td>10</td>
+						<td>2023-04-03</td>
+						<td>computation in types</td>
+						<td><a href="videos/lecture10.mp4">lecture video</a></td>
+						<td><a href="lecture/Lecture10.idr">script file</a></td>
+						<td><a href="lab/lab_10.pdf">lab sheet</a></td>
+					</tr>
+					
+					<tr>
+						<td>11</td>
+						<td>2023-04-10</td>
+						<td>propositions as types</td>
+						<td><a href="videos/lecture11.mp4">lecture video</a></td>
+						<td><a href="lecture/Lecture11.idr">script file</a></td>
+						<td><a href="lab/lab_11.pdf">lab sheet</a></td>
+					</tr>
+					
+					<tr>
+						<td>12</td>
+						<td>2023-04-17</td>
+						<td>first-order logic</td>
+						<td><a href="videos/lecture12.mp4">lecture video</a></td>
+						<td><a href="lecture/Lecture12.idr">script file</a></td>
+						<td><a href="lab/lab_12.pdf">lab sheet</a></td>
+					</tr>
+					
+					<tr>
+						<td>13</td>
+						<td>2023-04-24</td>
+						<td>inductive equality</td>
+						<td><a href="videos/lecture13.mp4">lecture video</a></td>
+						<td><a href="lecture/Lecture13.idr">script file</a></td>
+						<td><a href="lab/lab_13.pdf">lab sheet</a></td>
+					</tr>
+					
+					<tr>
+						<td>14</td>
+						<td>2023-05-01</td>
+						<td>equality for types</td>
+						<td><a href="videos/lecture14.mp4">lecture video</a></td>
+						<td><a href="lecture/Lecture14.idr">script file</a></td>
+						<td><a href="lab/lab_14.pdf">lab sheet</a></td>
+					</tr>
+					
+					<tr>
+						<td>15</td>
+						<td>2023-05-08</td>
+						<td>decidability and automation</td>
+						<td><a href="videos/lecture15.mp4">lecture video</a></td>
+						<td><a href="lecture/Lecture15.idr">script file</a></td>
+						<td><a href="lab/lab_15.pdf">lab sheet</a></td>
+					</tr>
+					
+					<tr>
+						<td>16</td>
+						<td>2023-05-15</td>
+						<td>record types</td>
+						<td><a href="videos/lecture16.mp4">lecture video</a></td>
+						<td><a href="lecture/Lecture16.idr">script file</a></td>
+						<td><a href="lab/lab_16.pdf">lab sheet</a></td>
+					</tr>
+					
+				</table>
+				
+			</section>
+			
+			<footer>
+				<p><small>Theme by <a href = "https://github.com/orderedlist">orderedlist</a></small></p>
+			</footer>
+			
+		</div>
+		<script src="/assets/js/scale.fix.js"></script>
+	</body>
+
+</html>
+

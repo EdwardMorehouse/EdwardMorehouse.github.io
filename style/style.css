@@ -1,0 +1,118 @@
+body
+{
+	margin: 6em;
+	font-family: "STIX" , "Times" , serif;
+	background-image: url("images/zigzag/ZigZag.svg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: 100%;
+}
+
+h1
+{
+	text-align: center;
+	font-family: "Hoefler Text" , "STIX" , "Times" , serif;
+	font-size: 36pt;
+	font-weight: 500;
+	font-variant: small-caps;
+	letter-spacing: 0.75ex;
+	word-spacing: 1.50ex;
+}
+
+div.subtitle
+{
+	text-align: center;
+	font-family: "Optima" , "Lucida Grande" , "Lucida" , sans-serif;
+	font-size: 10pt;
+	font-weight: 500;
+	font-variant: small-caps;
+	letter-spacing: 4ex;
+	word-spacing: 6ex;
+}
+
+div.endnote
+{
+	margin-top: 33%;
+	margin-bottom: 33%;
+	text-align: center;
+	font-family: "Optima" , "Lucida Grande" , "Lucida" , sans-serif;
+	font-size: 10pt;
+}
+
+h2
+{
+	text-align: left;
+	font-size: 16pt;
+	font-weight: 600;
+	letter-spacing: 0.25ex;
+}
+
+h2:before
+{
+	font-family: "STIX";
+	color: gray;
+	content: "⊣";
+}
+
+h2:after
+{
+	font-family: "STIX";
+	color: gray;
+	content: "⊢";
+}
+
+h3
+{
+	text-align: left;
+	font-size: 12pt;
+}
+
+h4
+{
+	text-align: left;
+	font-size: 10pt;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+ul > li:before
+{
+	font-family: "STIX";
+	color: gray;
+	display: marker;
+	content: "→";
+	text-align: center;
+}
+
+a:link, a:visited
+{
+	color: blue;
+	text-decoration: none;
+}
+
+a:hover
+{
+	background: pink;
+}
+
+img
+{
+	margin: 2em;
+}
+
+@font-face
+{
+	font-family: "STIX";
+	src: url("fonts/stix/STIX-Regular.otf");
+}
+
+@font-face
+{
+	font-family: "Neo Euler";
+	src: url("fonts/euler/euler.otf");
+}
+

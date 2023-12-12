@@ -1,0 +1,109 @@
+body
+{
+	margin: 4em;
+	font-family: "Times" , serif;
+}
+
+th, td
+{
+	border: 0px solid black;
+	padding-top: 1.5ex;
+	padding-bottom: 0ex;
+	padding-left: 2ex;
+	padding-right: 2ex;
+}
+
+h1
+{
+	text-align: center;
+	font-size: 36pt;
+	font-weight: 500;
+	font-variant: small-caps;
+}
+
+div.subtitle
+{
+	text-align: center;
+	font-family: "STIX" , "Times" , serif;
+	font-size: 10pt;
+	font-weight: 500;
+	font-variant: small-caps;
+	letter-spacing: 1.2ex;
+	word-spacing: 2ex;
+}
+
+h2
+{
+	text-align: left;
+	font-size: 16pt;
+	font-weight: 600;
+}
+
+h2:before
+{
+	font-family: "STIX";
+	color: gray;
+	content: "";
+}
+
+h2:after
+{
+	font-family: "STIX";
+	color: gray;
+	content: ":";
+}
+
+h3
+{
+	text-align: left;
+	font-size: 12pt;
+}
+
+h4
+{
+	text-align: left;
+	font-size: 10pt;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+ul > li:before
+{
+	font-family: "STIX";
+	color: gray;
+	display: marker;
+	content: "•";
+	text-align: center;
+}
+
+a:link, a:visited
+{
+	color: blue;
+	text-decoration: none;
+}
+
+a:hover
+{
+	background: pink;
+}
+
+img
+{
+	margin: 2em;
+}
+
+@font-face
+{
+	font-family: "STIX";
+	src: url("fonts/stix/STIX-Regular.otf");
+}
+
+@font-face
+{
+	font-family: "Neo Euler";
+	src: url("fonts/euler/euler.otf");
+}
+

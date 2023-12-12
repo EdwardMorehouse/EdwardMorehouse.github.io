@@ -1,0 +1,11 @@
+import math
+
+def scale_factor (n) :
+    """
+    signature:  int -> float
+    precondition: n >= 3
+    returns the Sierpinski polygon scale factor described at
+    http://ecademy.agnesscott.edu/~lriddle/ifs/pentagon/sierngon.htm
+    """
+    return 1 / (2 * (1 + (sum (map ((lambda k : math.cos ((2 * math.pi * k) / n)) , range (1 , n//4 + 1))))))
+
