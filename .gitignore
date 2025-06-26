@@ -14,5 +14,9 @@
 Thumbs.db
 ehthumbs.db
 
+# idris build artifacts
+*.ttm
+*.ttc
+
 # other stuff
 # goes here...

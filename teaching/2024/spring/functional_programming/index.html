@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<meta charset="UTF-8">
+	
+		<title>Functional Programming | CSCI 2520</title>
+	</head>
+	
+	
+	<body>
+		<h1>Dependently Typed Functional Programming</h1>
+		
+		
+		<h2>Course Organization</h2>
+		
+		<dl>
+			<dt>course code:</dt>
+				<dd>Bowdoin CSCI 2520</dd>
+			<dt>term:</dt>
+				<dd>Spring 2024</dd>
+			<dt>meetings:</dt>
+				<dd>
+					Mondays, Wednesdays, Fridays  9:05–10:00 in Searles 128
+				</dd>
+			<dt>instructor:</dt>
+				<dd>
+					<a href = "https://www.bowdoin.edu/profiles/faculty/e.morehouse/index.html">Ed Morehouse</a>
+				</dd>
+				</dd>
+			<dt>syllabus:</dt>
+				<dd>
+					<a href="handout/syllabus.pdf">here</a>
+				</dd>
+			<dt>slack:</dt>
+				<dd>
+					<a href="https://join.slack.com/t/bowdoin-csci-2520/shared_invite/zt-2af622szp-CKWJMquqWgOAheFdtMCUhw">Bowdoin CSCI 2520</a>
+				</dd>
+		</dl>
+		
+		
+		<h2>Resources</h2>
+		
+		<ul>
+			<li>
+				The <a href = "https://www.idris-lang.org/">Idris Website</a>
+			</li>
+			<li>
+				The <a href = "https://idris2.readthedocs.io/en/latest/tutorial/index.html">Idris Tutorial</a>
+			</li>
+			<li>
+				The <a href = "https://www.manning.com/books/type-driven-development-with-idris">Idris Book</a>
+			</li>
+			<li>
+				Idris 2 <a href = "https://idris2.readthedocs.io/en/latest/">online documentation</a>
+			</li>
+			<li>
+				Idris 2 <a href = "https://github.com/idris-lang/Idris2/tree/main/libs">standard library</a>
+			</li>
+		</ul>
+		
+		
+		<h2>Announcements</h2>
+		
+		<ul>
+			<li>Office hours are posted in the syllabus.</li>
+			<li>Homework 1 is due 2024-02-07.</li>
+			<li>Homework 2 is due 2024-02-21.</li>
+			<li>Homework 3 is due 2024-03-06.</li>
+			<li><a href="exam/exam_1_spec.pdf">Exam 1</a> will be on 2024-03-08.</li>
+			<li><a href="project/project.pdf">The course project</a > is due <s>2024-05-08</s>. 2024-05-14</li>
+			<li>Homework 4 is due <s>2024-04-10</s>. 2024-04-12</li>
+			<li>Homework 5 is due 2024-04-24.</li>
+			<li>Homework 6 is due 2024-05-08.</li>
+			<li><a href="exam/exam_2_spec.pdf">Exam 2</a> will be on 2024-05-08.</li>
+		</ul>
+		
+		
+		<h2>Outline</h2>
+		
+		<p>All dates in the future should be considered tentative.</p>
+		
+		<table>
+			
+			<tr>
+				<th>week</th>
+				<th>beginning</th>
+				<th>topic</th>
+				<th>script file</th>
+				<th>lab sheet</th>
+				<th>assignment</th>
+			</tr>
+			
+			<tr>
+				<td>01</td>
+				<td>2024-01-22</td>
+				<td>introduction</td>
+				<td><a href="lecture/Lecture1.idr">Lecture 1</a></td>
+				<td><a href="lab/lab_01.pdf">Lab 1</a></td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>02</td>
+				<td>2024-01-29</td>
+				<td>inductive types and recursive functions</td>
+				<td><a href="lecture/Lecture2.idr">Lecture 2</a></td>
+				<td><a href="lab/lab_02.pdf">Lab 2</a></td>
+				<td><a href="homework/homework_1.pdf">Homework 1</a></td>
+			</tr>
+			
+			<tr>
+				<td>03</td>
+				<td>2024-02-05</td>
+				<td>parameterized types and generic functions</td>
+				<td><a href="lecture/Lecture3.idr">Lecture 3</a></td>
+				<td><a href="lab/lab_03.pdf">Lab 3</a></td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>04</td>
+				<td>2024-02-12</td>
+				<td>function literals and higher-order functions</td>
+				<td><a href="lecture/Lecture4.idr">Lecture 4</a></td>
+				<td><a href="lab/lab_04.pdf">Lab 4</a></td>
+				<td><a href="homework/homework_2.pdf">Homework 2</a></td>
+			</tr>
+			
+			<tr>
+				<td>05</td>
+				<td>2024-02-19</td>
+				<td>programming interfaces</td>
+				<td><a href="lecture/Lecture5.idr">Lecture 5</a></td>
+				<td><a href="lab/lab_05.pdf">Lab 5</a></td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>06</td>
+				<td>2024-02-26</td>
+				<td>monadic I/O</td>
+				<td><a href="lecture/Lecture6.idr">Lecture 6</a></td>
+				<td><a href="lab/lab_06.pdf">Lab 6</a></td>
+				<td><a href="homework/homework_3.pdf">Homework 3</a></td>
+			</tr>
+			
+			<tr>
+				<td>07</td>
+				<td>2024-03-04</td>
+				<td>review and first exam</td>
+				<td><a href="lecture/Review1.idr">Review 1</a></td>
+				<td></td>
+				<td><a href="project/project.pdf">Course Project</a></td>
+			</tr>
+			
+			<tr>
+				<td>08</td>
+				<td>2024-03-11</td>
+				<td>SPRING BREAK</td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>09</td>
+				<td>2024-03-18</td>
+				<td>SPRING BREAK</td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>10</td>
+				<td>2024-03-25</td>
+				<td>totality for data and codata</td>
+				<td><a href="lecture/Lecture7.idr">Lecture 7</a></td>
+				<td><a href="lab/lab_07.pdf">Lab 7</a></td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>11</td>
+				<td>2024-04-01</td>
+				<td>algebraic interfaces</td>
+				<td><a href="lecture/Lecture8.idr">Lecture 8</a></td>
+				<td><a href="lab/lab_08.pdf">Lab 8</a></td>
+				<td><a href="homework/homework_4.pdf">Homework 4</a></td>
+			</tr>
+			
+			<tr>
+				<td>12</td>
+				<td>2024-04-08</td>
+				<td>indexed types and dependent functions</td>
+				<td><a href="lecture/Lecture9.idr">Lecture 9</a></td>
+				<td><a href="lab/lab_09.pdf">Lab 9</a></td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>13</td>
+				<td>2024-04-15</td>
+				<td>propositions as types</td>
+				<td><a href="lecture/Lecture10.idr">Lecture 10</a></td>
+				<td><a href="lab/lab_10.pdf">Lab 10</a></td>
+				<td><a href="homework/homework_5.pdf">Homework 5</a></td>
+			</tr>
+			
+			<tr>
+				<td>14</td>
+				<td>2024-04-22</td>
+				<td>inductive equality</td>
+				<td><a href="lecture/Lecture11.idr">Lecture 11</a></td>
+				<td><a href="lab/lab_11.pdf">Lab 11</a></td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>15</td>
+				<td>2024-04-29</td>
+				<td>first-order logic</td>
+				<td><a href="lecture/Lecture12.idr">Lecture 12</a></td>
+				<td><a href="lab/lab_12.pdf">Lab 12</a></td>
+				<td><a href="homework/homework_6.pdf">Homework 6</a></td>
+			</tr>
+			
+			<tr>
+				<td>16</td>
+				<td>2024-05-06</td>
+				<td>review and second exam</td>
+				<td><a href="lecture/Review2.idr">Review 2</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			
+		</table>
+				
+	</body>
+
+</html>
+
